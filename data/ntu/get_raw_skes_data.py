@@ -132,10 +132,11 @@ def get_raw_skes_data():
         pickle.dump(frames_drop_skes, fw, pickle.HIGHEST_PROTOCOL)
 
 if __name__ == '__main__':
-    save_path = './'
+    save_path = '/content/psumnet/data/ntu'
 
-    skes_path = '../nturgbd_raw/nturgb+d_skeletons/'
-    stat_path = osp.join(save_path, 'statistics')
+    skes_path = '/content/psumnet/data/ntu/raw_data/nturgb+d_skeletons'
+    stat_path = '/content/psumnet/data/ntu/statistics'
+    #/content/psumnet/data/ntu/raw_data/frames_drop.log
     if not osp.exists('./raw_data'):
         os.makedirs('./raw_data')
 
